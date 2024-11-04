@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>How To Run Pathologic Classic HD on Linux - The Gorkhon Archives</title>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#c59d80">
+</head>
+
+<body id="main">
+  <div class="roman" id="page">
+    <div class="main">
+      <header>
+        <a href="index.html"><img src="images/header.png" alt="The Gorkhon Archives" width="500"></a>
+      </header>
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="whatispathologic.html">What is Pathologic?</a>
+          <a href="news.html">News</a>
+          <a href="glossary.html">Glossary</a>
+          <a href="webring.html">Webring</a>
+          <a href="updates.html">Updates</a>
+          <a href="sitemap.html">Sitemap</a>
+          <a href="legal.html">Legal</a>
+          <a href="contact.html">Contact</a>
+      </nav>
+      <button class="font" onclick="changeFont();" title="Click for dyslexia-friendly font!"></button>
+      <!-- Replace <hr> tags with a cute border. Maybe not cute but... a border.
+
+            Also, add a button to switch the font to Comic Sans.-->
+      <h2>How To Run Pathologic Classic HD on Linux</h2>
+      <p>Pathologic Classic HD on Steam actually runs pretty well on Linux on its own (using Proton, of course). However, it has a lot of issues with playing cutscenes. This has something to do with the fact that the game runs .wmv files with Windows Media Player 9, which ends up being a pretty complicated fix requiring tinkering with Wine and Lutris.... but no more! Here is an easier guide to getting it to work without you needing to Alt+Tab every few minutes.</p>
+      <p>Credit to <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=595798189" class="a">uka7777</a> for making the No Intro mod, which is what this guide is based on.</p>
+      <p>Also, unfortunately, this fix requires completely disabling cutscenes and video files in general. If that's too much to ask, then you should probably just try running the game on a VM or a Windows machine in general. Otherwise, you can just open the cutscenes in a video player of your choice and play them when they'd occur in-game (I'll provide a chart for that later).</p>
+      <p>Anyways, first you will want to replace all the video files with blank files, so the game will just skip over them. Locate your installation folder like so:</p>
+      <figure>
+        <img src="images/linux1.png" alt="">
+        <figcaption>Right click Pathologic Classic HD in your Steam library, hover over Manage, and click Browse local files.</figcaption>
+      </figure>
+      <p>Open the <strong>data</strong> folder and then open the <strong>Video</strong> folder.</p>
+      <p>Download <a href="https://mega.nz/file/akkxkJyJ#9FYc_JjtkSROAS5Dvdjh7aUwbqM0Kf4lMQNKgUjqDtI" class="a">this</a> archive of blank files and drag them into the Video folder. This will overwrite the ACTUAL video files, so you may want to make a backup of the .wmv files beforehand. </p>
+      <p>Next, you want to install Proton GE. It's a custom release of Proton that gets regular releases- check the <a href="https://github.com/GloriousEggroll/proton-ge-custom" class="a">Github repo</a> for more information.</p>
+      <p>Open your terminal and type in the following commands:</p>
+      <code>pip3 install protonup</code><br>
+      <code>protonup -d"~/.steam/root/compatibilitytools.d/"</code>
+      <p>This will download the automatic installer for Proton GE and set the install directory so Steam will recognize it. If the pip command doesn't work for you, then you probably don't have pip installed, which you'll need to figure out first.</p>
+      <p>Then simply type in <code>protonup</code> and install Proton GE. You may run into a traceback error like I did, but I still was able to make the game work regardless.</p>
+      <p>Open Steam (or restart it if you already had it open) and open the Properties menu for your Pathologic Classic HD installation. Navigate to the Compatibility tab and check "Force the use of a specific Steam Play compatibility tool". In the dropdown, select your Proton GE installation.</p>
+      <figure>
+        <img src="images/linux2.png" alt="">
+      </figure>
+      <p>And boom, you're done! Pathologic Classic HD will run like a charm, albeit without cutscenes... it's a price you must be willing to pay.</p>
+      <p>I am running Debian 11 (Buster) and I haven't had any issues with this method so far. You may or may not have issues depending on your distro. If you do, then... well, I dunno what to tell you. I also left in the blood sample videos, which may cause an issue in Rubin's Laboratory... TOO BAD! </p>
+      <p>Hopefully this helps any fellow Linux users who want to play Pathologic Classic HD!</p>
+    </div>
+  </div>
+  <script src="scripts.js" charset="utf-8" type="text/javascript"></script>
+</body>
+
+</html>

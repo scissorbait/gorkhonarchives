@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fanart - Daniil Dankovsky - The Gorkhon Archives</title>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#c59d80">
+</head>
+
+<body class="art_daniil">
+  <div class="roman" id="page">
+      <button class="font" onclick="changeFont();" title="Click for dyslexia-friendly font!"></button>
+      <a href="index.html"><img src="images/Map_Entity.png" title="Click to go back to the homepage!" class="homebutton"></a>
+      <h1>DANIIL DANKOVSKY</h1>
+      <a href="art_index.html">Return to index</a>
+
+      <br><br><br><br>
+      <div class="art">
+        <div class="art">
+          <a href="images/art/daniil/2.jpg" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/2.jpg"> </a>
+          <a href="images/art/daniil/13.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/13.jpg"> </a>
+          <a href="images/art/daniil/16.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/16.jpg"> </a>
+          <a href="images/art/daniil/1.JPG" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/1.jpg"> </a>
+          <a href="images/art/daniil/21.jpg" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/21.jpg"> </a>
+          <a href="images/art/daniil/10.jpg" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/10.jpg"> </a>
+          <a href="images/art/daniil/4.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/4.jpg"> </a>
+          <a href="images/art/daniil/5.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/5.jpg"> </a>
+          <a href="images/art/daniil/6.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/6.jpg"> </a>
+          <a href="images/art/daniil/17.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/17.jpg"> </a>
+          <a href="images/art/daniil/19.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/19.jpg"> </a>
+          <a href="images/art/daniil/20.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/20.jpg"> </a>
+          <a href="images/art/daniil/12.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/12.jpg"> </a>
+          <a href="images/art/daniil/23.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/23.jpg"> </a>
+          <a href="images/art/daniil/7.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/7.jpg"> </a>
+          <a href="images/art/daniil/11.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/11.jpg"> </a>
+          <a href="images/art/daniil/15.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/15.jpg"> </a>
+          <a href="images/art/daniil/9.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/9.jpg"> </a>
+          <a href="images/art/daniil/3.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/3.jpg"> </a>
+          <a href="images/art/daniil/8.jpg" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/8.jpg"> </a>
+          <a href="images/art/daniil/18.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/18.jpg"> </a>
+          <a href="images/art/daniil/14.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/14.jpg"> </a>
+          <a href="images/art/daniil/22.png" class="filterDiv" target="_blank"> <img src="images/art/daniil/thumb/22.jpg"> </a>
+        </div>
+      </div>
+  </div>
+  <script src="scripts.js" charset="utf-8" type="text/javascript"></script>
+  <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="isotope.pkgd.min.js"></script>
+  <script>
+  var $grid = $('.art').isotope({
+    itemSelector: '.filterDiv',
+    percentPosition: true,
+    masonry: {
+      // use outer width of grid-sizer for columnWidth
+      columnWidth: 5,
+      fidWidth: true,
+    }
+  })
+
+  $grid.imagesLoaded().progress( function() {
+    $grid.isotope('layout');
+  });
+
+  $(window).load(function(){$('#thumbs').isotope('reLayout');});
+  </script>
+</body>
+
+</html>

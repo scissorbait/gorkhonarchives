@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Site To-Do List -The Gorkhon Archives</title>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#c59d80">
+</head>
+
+<body id="main">
+  <div class="roman" id="page">
+    <div class="main">
+      <header>
+        <a href="index.html"><img src="images/header.png" alt="The Gorkhon Archives" width="500"></a>
+      </header>
+      <br>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="whatispathologic.html">What is Pathologic?</a>
+        <a href="updates.html">Updates</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="legal.html">Legal</a>
+      </nav>
+      <button class="font" onclick="changeFont();" title="Click for dyslexia-friendly font!"></button>
+      <!-- Replace <hr> tags with a cute border. Maybe not cute but... a border.
+
+            Also, add a button to switch the font to Comic Sans.-->
+      <h2>Site To-do List</h2>
+      <div class="textalignleft">
+        <p>Since I've already gotten some feedback on certain aspects of the site, I decided to put this page up to keep track of fixes I've yet to implement as well as what I've been generally working on. If you have any suggestions, contributions, or experience an issue with the site, please leave a comment on my Neocities profile or shoot me an email at <a href="mailto:thegorkhonarchives@gmail.com">thegorkhonarchives@gmail.com</a>! Please keep in mind that this site is intended to be viewed on desktop, but if parts of it are unusable on mobile, I'm open to working on a fix. </p>
+
+        <p><b>Dyslexia-friendly font switching back to normal when changing pages</b></p>
+        <p>Status: In progress! I know this mainly is an issue of needing to set a cookie, but I have no clue how to do that. I was never very good with Javascript. Currently seeking help from a more experienced friend with this, but if that doesn't work out, it may take a bit longer for me to figure this out.</p>
+
+        <p><b>Font-switching button doesn't work on mobile</b></p>
+        <p>Status: In progress! I don't have a reliable way to test this since I don't regularly use a smartphone, and the developer console shows that it should be working fine. I'm assuming that this should be a relatively easy fix, I just need to figure out where the issue is coming from.</p>
+
+        <p><b>Development history page</b></p>
+        <p>Status: Medium-high priority, in progress. There's a lot of information scattered around the web on the development history of Pathologic and I want to make my own little writeup about it that includes as much information as possible. This will take me a while, since I want to make sure its easy to read and understand. Still in the information-gathering stage as of the last update.</p>
+
+        <p><b>Non-implemented links on the What is Pathologic page</b></p>
+        <p>Status: Medium priority, on hold. I actually have the tips page (mostly) written out. As for the comparisons page, not so much. I had plans for custom formatting but I haven't gotten around to drafting an idea for it; that idea might be scrapped entirely.</p>
+
+        <p><b>Making the glossary page more interactive</b></p>
+        <p>Status: Lowest priority. I have a very specific image in mind for this, but again, I don't know Javascript well, and this requires Javascript. I'll leave this up to whenever I get more familiar with it or if anyone feels like helping me with it.</p>
+      </div>
+
+    </div>
+  </div>
+  <script>
+  function changeFont() {
+      var fon = document.getElementById("page");
+      if (fon.className == "roman") {
+        fon.className = 'comic';
+      } else {
+        fon.className = 'roman';
+      }
+    }
+  </script>
+</body>
+
+</html>

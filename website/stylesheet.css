@@ -1,0 +1,577 @@
+@font-face {
+  font-family: Atkinson;
+  src: url("Atkinson-Hyperlegible-Regular-102.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Atkinson;
+  src: url("Atkinson-Hyperlegible-Bold-102.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Atkinson;
+  src: url("Atkinson-Hyperlegible-BoldItalic-102.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: Atkinson;
+  src: url("Atkinson-Hyperlegible-Italic-102.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: 'Friz Quadrata';
+  src: url("FrizQuadrataStd.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  text-align: center;
+  margin: 0px;
+  font-family: "Friz Quadrata", "Bookman", "Bookman Old Style";
+  font-size: 14px;
+  color: rgba(77, 1, 0, 1);
+}
+
+#main {
+  background: brown url(images/bride2.jpg) no-repeat bottom fixed;
+  background-position: 0% 70%;
+  background-size: cover;
+}
+
+.uh {
+  background-color: black;
+}
+
+.uh img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+audio {
+  height: 32px;
+  margin-bottom: 10px;
+}
+
+
+
+details.spoiler summary::after {
+  content: var(--hidden);
+  filter: blur(4px);
+  display: block;
+}
+
+details[open] summary::after {
+  display: none;
+}
+
+hr {
+  border: 2px outset brown;
+  margin: 30px 0px;
+}
+
+.rightalign {
+  float: right;
+  margin: 5px;
+}
+
+.leftalign {
+  float: left;
+  margin: 5px;
+}
+
+.textalignleft {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+a:hover {
+  color: red;
+}
+
+.a {
+    font-weight: bold;
+}
+
+
+.main {
+  text-align: center;
+  margin: auto;
+  padding: 20px 50px 50px 50px;
+  display: block;
+  background-color: rgba(255, 192, 128, 0.5);
+  width: 800px;
+  border-color: brown;
+  border-style: ridge;
+  border-top: 0px;
+  margin-bottom: 400px;
+  font-size: 16px;
+}
+
+.main iframe {
+  margin: 20px;
+  height: 300px;
+}
+
+.roman {
+  font-family: "Bookman", "Bookman Old Style";
+}
+
+.comic {
+  font-family: "Atkinson";
+  font-size: 16px;
+}
+
+nav {
+  padding: 15px;
+  border-color: brown;
+  border-style: outset;
+  border-left: none;
+  border-right: none;
+  background-color: rgba(255, 220, 184, 0.5);
+  margin: 20px -50px;
+}
+
+nav a {
+  margin: 0px 5px;
+  width: 50px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+nav a:link{
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.font {
+  border: none;
+  background-color: rgba(255, 0, 0, 0);
+  font-size: 0;
+  background-image: url(images/Powder.png);
+  background-size: cover;
+  z-index: 1;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+
+#artfilter {
+  border-color: inherit;
+  background-color: #6e6241;
+  font-size: 14px;
+  font: inherit;
+  color: inherit;
+  padding: 5px;
+}
+
+.homebutton {
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  z-index: 1;
+  bottom: 100px;
+  right: 20px;
+}
+
+.links {
+  display: flex
+}
+
+.col1 {
+  margin-bottom: 50px;
+  width: 50%;
+  min-width: 240px;
+}
+
+.col2 {
+  margin-bottom: 50px;
+  width: 50%;
+  min-width: 240px;
+}
+
+.links h3 {
+  margin: 5px;
+}
+
+.main ul {
+  width: 70%;
+  list-style-position: inside;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.links li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.links img {
+  display: inline;
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.workbox {
+  width: 200px;
+  margin: 10px;
+}
+
+.display {
+  width: 55%;
+  border:3px solid brown;
+  text-align: left;
+  background: rgba(255, 220, 184, 0.5);
+  border-spacing: 0px;
+  height: 106px;
+  margin: 40px auto 30px;
+}
+
+.display th, .display td, .display tbody {
+  padding: 0px;
+  border: none;
+  margin: 0px;
+}
+
+.display th {
+  background: brown;
+  color: rgb(255, 220, 184);
+}
+
+.display td > div {
+  position: relative;
+}
+
+.display img {
+  display: block;
+  height: auto;
+}
+
+.music-overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  width: 150px;
+  height: 150px;
+  top: 0;
+  opacity: 0;
+  transition: ease-in 0.1s;
+}
+
+.music-overlay:hover {
+  opacity: 1;
+}
+
+.music-overlay > p {
+  position: absolute;
+  color: white;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.art_index {
+  background: brown url(bgs/brn.jpg) repeat;
+  color: rgba(255, 192, 128, 1);
+  margin-bottom: 200px;
+}
+
+.art_emy {
+  background: tan url(bgs/artemybg.png) no-repeat top fixed;
+  background-size: cover;
+  color: sienna;
+  margin-bottom: 200px;
+}
+
+.art_daniil {
+  background: darkgrey url(bgs/daniilbg.png) no-repeat top fixed;
+  background-size: cover;
+  color: rgb(54, 69, 79);
+}
+
+.art_daniil .art img {
+  border-color: rgb(54, 69, 79);
+}
+
+.art_official {
+  background: darkgrey url(bgs/Bk4.jpg) repeat;
+  color: #cfc676;
+}
+
+.art_official .art img {
+  border: solid 1px #cfc676;
+}
+
+.art {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.art img {
+  border: 1px solid rgba(255, 192, 128, 1);
+  width: 300px;
+}
+
+.artxt {
+  background-color: rgba(56, 40, 25, 0.7);
+  border: 1px dotted rgba(255, 192, 128, 1);
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+.artxt a {
+  color: tan;
+  font-weight: bold;
+}
+
+.artxt a:hover {
+  color: orange;
+}
+
+.art_official .artxt {
+  border: dotted 1px #cfc676;
+  background-color: rgba(52, 56, 44, 0.7)
+}
+
+.essay {
+  background-color: skyblue;
+  color: mediumblue;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  display: block;
+  padding-bottom: 100px;
+  line-height: 30px;
+}
+
+.essay ul {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.essay li {
+  margin: 10px;
+}
+
+.essay .textalignleft p {
+  margin: 25px 0px;
+}
+
+.essay blockquote {
+  background-color: rgba(0, 0, 205, 0.2);
+  border-left: 5px solid;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+.essay cite {
+  font-style: normal;
+  font-weight: bold;
+}
+
+ul.intext {
+  width: 100%;
+  margin-left: 30px;
+}
+
+figure {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 80%;
+  gap: 10px;
+}
+
+figure img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+.devsrc p:target {
+  border: 1px dotted brown;
+  background-color: rgba(165,42,42,0.2)
+}
+
+.essrc p:target {
+   border: 1px dotted blue;
+   background-color: rgba(165,42,42,0.2)
+ }
+
+#ex {
+  display: block;
+  margin: auto;
+  width: 700px;
+  text-align: center;
+}
+
+.oc {
+  font-size: 16px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px
+}
+
+.oc table {
+  margin: auto;
+  border-spacing: 50px 20px;
+}
+
+.oc td {
+  vertical-align: top;
+}
+
+.oc a {
+  color: orange
+}
+
+.kostya {
+  background: brown url(bgs/bgchoc2.jpeg) repeat;
+  color: tan;
+}
+
+.kostya .beeg {
+  padding: 20px;
+  background-color: rgba(210,180,140,0.2);
+}
+
+.mura {
+  background: brown url(bgs/bgbrownscroll.gif) repeat;
+  color: tan;
+}
+
+.mura .beeg {
+  padding: 20px;
+  background-color: rgba(165,42,42,0.6);
+}
+
+.ocart {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.ocprof td {
+  vertical-align: middle;
+}
+
+.fil img {
+  height: 300px;
+  border: 3px ridge tan;
+}
+
+.vl {
+  margin: auto;
+  line-height: 25px;
+  width: 55%;
+  font-style: italic;
+  text-align: left;
+}
+
+.pl {
+  margin: auto;
+  line-height: 25px;
+  width: 55%;
+  text-align: left;
+}
+
+.items img {
+  width: 110px;
+}
+
+.items {
+  width: 60%
+}
+
+.chars img {
+  width: 140px;
+  border: 3px tan ridge;
+}
+
+.show {
+  display: inline;
+}
+
+/*  Newsfeed styling */
+li.rss-item {
+  list-style-type:none; 
+  margin-bottom:20px; 
+  width: 100%;
+}
+
+/* this styles the blog title link */
+li.rss-item :first-child {
+  font-weight:bold;
+  font-size:20px;
+  text-decoration:none; /* removes underline */
+}
+
+/* this styles the date */
+.rss-date {
+  display:inline-block; /* need this to add padding around each number */
+  padding-top:10px;
+  padding-bottom:10px;
+  font-style:italic;
+} 
+
+/* hides the weird # of comments (displayed as 0 in demo) */
+a.rss-item :last-child { 
+  display:none;
+}
+ 
+ul.rss-items {
+  width: 100%;
+  padding-left: 0;
+}  

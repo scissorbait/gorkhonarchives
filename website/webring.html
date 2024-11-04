@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Webring of Suok - The Gorkhon Archives</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#c59d80">
+</head>
+
+<body id="main">
+    <div class="roman" id="page">
+        <div class="main">
+            <header>
+                <a href="index.html"><img src="images/header.png" alt="The Gorkhon Archives" width="500"></a>
+            </header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="whatispathologic.html">What is Pathologic?</a>
+                <a href="news.html">News</a>
+                <a href="glossary.html">Glossary</a>
+                <a href="webring.html">Webring</a>
+                <a href="updates.html">Updates</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="legal.html">Legal</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="font" onclick="changeFont();" title="Click for dyslexia-friendly font!"></button>
+            <!-- Replace <hr> tags with a cute border. Maybe not cute but... a border.
+
+            Also, add a button to switch the font to Comic Sans.-->
+            <h2>Webring of Suok</h2>
+            <div class="textalignleft">
+                <p>Welcome to the <b>Webring of Suok</b>, hosted here on The Gorkhon Archives!</p>
+                <p>The Webring of Suok is a webring made specifically for fans of Pathologic. Since the game is incredibly niche to begin with, it's not always easy to find other people who know of, let alone like the game too! This webring aims to solve that problem :^)</p>
+                <h3>Are there any guidelines for joining?</h3>
+                <p>Nope! As long as you're a fan of Pathologic you're welcome to join.</p>
+                <p>You're definitely encouraged to have something Pathologic-related on your website though! It can be anything, really. You can have an entire Pathologic shrine or just have a picture of a shmowder somewhere on your site. Spread the love!</p>
+                <h3>How do I join?</h3>
+                <p>You can leave a request on our <a href="https://neocities.org/site/thegorkhonarchives">Neocities profile</a> OR send the Webmaster an email at <a href="mailto:thegorkhonarchives@gmail.com">thegorkhonarchives@gmail.com</a> with a link to your site and you will be added ASAP! Once you're added, you will receive an email saying you've been approved. All you have to do next is add the webring code to your website.</p>
+                <p>Just copy and paste the following code into your website for the widget!</p>
+                <textarea name="webring-widget-code" cols="39" rows="8" readonly><div id='tga-webring-of-suok'><script type="text/javascript" src="https://thegorkhonarchives.neocities.org/onionring/onionring-variables.js"></script> <script type="text/javascript" src="https://thegorkhonarchives.neocities.org/onionring/onionring-widget.js"></script></div>
+                </textarea>
+                <p>And then make sure to paste the widget's CSS code into your website's "head" field:</p>
+                <textarea name="webring-widget-css" cols="30" rows="4" readonly><link rel="stylesheet" href="https://thegorkhonarchives.neocities.org/onionring/onionring.css">
+                </textarea>
+                <p>Linking to each other is what keeps the webring alive, so make sure you don't forget this step!</p>
+                <h3>Anything else?</h3>
+                <p>Keep in mind that we have the right to refuse/remove your website from the webring at any moment for any reason! Some specific reasons include:</p>
+                <ul>
+                    <li>The webring widget isn't on your site.</li>
+                    <li>The link to your website is broken.</li>
+                    <li>You have asked to have your site removed from the webring.</li>
+                </ul>
+                <p>The webring won't be pruned frequently, but if we happen to find an issue with your site then we'll send a message to your given email in case it is something fixable (like adding the widget). If the issue isn't fixed within at least 30 days, your site will be removed from the webring.</p>
+                <h3>Current members of the Webring of Suok:</h3>
+                <div id='index'>
+                    <script type="text/javascript" src="onionring/onionring-variables.js"></script>
+                    <script type="text/javascript" src="onionring/onionring-index.js"></script>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="scripts.js" charset="utf-8" type="text/javascript"></script>
+    <script>
+        /* Forked from this tutorial: https://learn.sadgrl.online/the-easiest-way-to-make-a-blog-on-neocities/#styling-your-blog */
+
+        document.querySelectorAll('li.rss-item .rss-date ~ img') // select all of the comment images
+        .forEach(function(item, i) { // loop through each of them
+        item.parentNode.removeChild(item.nextSibling); // remove the word "comments" next to the image
+        item.parentNode.removeChild(item); // remove the image itself
+        });
+    </script>
+</body>
+
+</html>

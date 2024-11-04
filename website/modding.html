@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Modding - The Gorkhon Archives</title>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#c59d80">
+</head>
+
+<body id="main">
+  <div class="roman" id="page">
+    <div class="main">
+      <header>
+        <a href="index.html"><img src="images/header.png" alt="The Gorkhon Archives" width="500"></a>
+      </header>
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="whatispathologic.html">What is Pathologic?</a>
+          <a href="news.html">News</a>
+          <a href="glossary.html">Glossary</a>
+          <a href="webring.html">Webring</a>
+          <a href="updates.html">Updates</a>
+          <a href="sitemap.html">Sitemap</a>
+          <a href="legal.html">Legal</a>
+          <a href="contact.html">Contact</a>
+      </nav>
+      <button class="font" onclick="changeFont();" title="Click for dyslexia-friendly font!"></button>
+      <h2>Modding</h2>
+      <p>So, you want to make a mod for Pathologic? You're in luck! Members of the community have made their own guides for modifying the game and have provided tools for doing so as well.</p>
+      <p>Most of the modding information centered around Pathologic is based on Classic HD, so most of the focus here will be on the first game. I'll also include information on console commands at the bottom of the page at a later date.</p>
+      <p>I'll be giving a few basic guides and resources, but you may want to check out the <a href="https://pathomodding.miraheze.org/wiki/Pathologic">Pathologic Modding Wiki</a> for even more resources.</p>
+      <br>
+      <h3>Classic HD</h3>
+      <p>Much of the game resources, other than sound and video files, are saved in a .vfs package format. To unpack the files, you're going to need to use <a href="https://mega.nz/file/XkUWjQ7T#_Ghas51Xz9y5s-3AZ1hku9NylqOjjWuWnSCVWsLvte4" class="a">mor_converter,</a> a tool specially made for Pathologic Classic HD. The program was originally in Russian, so the text will appear as question marks, but is very intuitive to use despite that.</p>
+      <p>To edit the .bin files in unpacked Scripts folder, you can use the handy-dandy <a href="https://github.com/adc-ax/GorkhonScriptEditor" class="a">Gorkhon Script Editor</a>, provided you have some familiarity with hex bytecode.</p>
+      <p>I recommend following <a href="https://docs.google.com/document/d/1Phld5Ghap8-DoYNtQqWqE3iRww8Mzn-YBdw88A3cO_A/edit" class="a">KyoraKitty's comprehensive guide to modding Pathologic.</a> They teach you how to use the mor_converter program, give a rundown of the different files within the .vfs packages, as well as how to edit different types of files. It's got pretty much everything you'd need to know for basic modding.</p>
+      <p>Here are a few other resources, just in case:</p>
+      <p><a href="https://github.com/somevideoguy/pathologic" class="a">A description of the Pathologic file format.</a></p>
+      <p><a href="https://rathologic.tumblr.com/post/631362896578904064/how-did-you-go-about-ripping-the-patho-classic" class="a">Step-by-step texture editing process</a></p>
+      <p><a href="https://pathologic.fandom.com/wiki/Debug/Modding/Pathologic" class="a">Pathologic Wiki Modding Guide</a></p>
+      <br>
+      <h3>Pathologic 2</h3>
+      <p>As far as I've seen, I haven't found much information on actually modding Pathologic 2 in particular. Since the game is made in Unity, you likely can use general Unity modding guides coupled with basic coding knowledge and experience with the C# language. Pathologic 2 doesn't have official mod support, so you'll need to work around that.</p>
+      <p>Here are a few starting points:</p>
+      <p><a href="https://wiki.nexusmods.com/index.php/Unity_modding_tools" class="a">Unity Modding Tools</a></p>
+      <p><a href="https://github.com/imadr/Unity-game-hacking" class="a">A guide for hacking Unity games</a></p>
+      <p><a href="https://wiki.nexusmods.com/index.php/How_to_create_mod_for_unity_game" class="a">How to create mod for Unity game</a></p>
+    </div>
+  </div>
+  <script src="scripts.js" charset="utf-8" type="text/javascript"></script>
+</body>
+
+</html>
