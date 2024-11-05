@@ -9,8 +9,9 @@
 var sites = [
 'https://thegorkhonarchives.nekoweb.org/index.html',
 'https://tyoma.cool/',
-'https://pleurodelinae.neocities.org/',
-'https://archive.maxbanshees.com/'
+'https://archive.maxbanshees.com/',
+'https://bundleofstyx.neocities.org/',
+'https://hiisa.neocities.org/',
 ];
 
 //the name of the ring
