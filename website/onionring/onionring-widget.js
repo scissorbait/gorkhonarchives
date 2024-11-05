@@ -57,8 +57,8 @@ if (thisIndex == null) {
     tag.insertAdjacentHTML('afterbegin', `
   <table>
     <tr>
-      <td class='webring-info'>This site is part of the<br> <a href="https://thegorkhonarchives.neocities.org/webring.html"><b>${ringName}</b></a> </br>
-      <a href="https://thegorkhonarchives.neocities.org/webring.html"><img src="https://thegorkhonarchives.neocities.org/images/Charm-mini.png" width="80" style="display:block;margin:0 auto;"></a>
+      <td class='webring-info'>This site is part of the<br> <a href="https://thegorkhonarchives.nekoweb.org/webring.html"><b>${ringName}</b></a> </br>
+      <a href="https://thegorkhonarchives.neekoweb.org/webring.html"><img src="https://thegorkhonarchives.nekoweb.org/images/Charm-mini.png" width="80" style="display:block;margin:0 auto;"></a>
       <span class='webring-links'>
         <a href='${sites[previousIndex]}'>←</a> |
         ${randomText}
