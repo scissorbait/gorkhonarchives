@@ -7,7 +7,7 @@
 
 //the full URLs of all the sites in the ring
 var sites = [
-'https://thegorkhonarchives.nekoweb.org/index.html',
+'https://thegorkhonarchives.nekoweb.org/',
 'https://tyoma.cool/',
 'https://archive.maxbanshees.com/',
 'https://bundleofstyx.neocities.org/',
